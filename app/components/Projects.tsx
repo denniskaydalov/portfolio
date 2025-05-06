@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Projects() {
   const hackathons = [
     { id: 1, role: 'Hack the North', company: 'Dev Flow', period: 'Sep 2024', description: 'Built an automated Kanban interface, streamlining CI/CD with GitHub Actions.' },
-    { id: 2, role: 'Meta Llama Impact Hackathon', company: 'Trading Zoo', period: 'Dec 2024', description: 'Built a simluated multi-agent stock market to practice trading against AI agents.' },
+    { id: 2, role: 'Meta Llama Impact Hackathon', company: 'Trading Zoo', period: 'Dec 2024', description: 'Built a simulated multi-agent stock market to practice trading against AI agents.' },
   ]
 
   return (
