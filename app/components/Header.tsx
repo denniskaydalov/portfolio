@@ -7,7 +7,7 @@ export default function Header() {
         <ul className="flex justify-center space-x-6">
           <li><Link href="#about" className="text-gray-800 hover:text-blue-600 transition duration-300">About</Link></li>
           <li><Link href="#experience" className="text-gray-800 hover:text-blue-600 transition duration-300">Experience</Link></li>
-          <li><Link href="#hackathons" className="text-gray-800 hover:text-blue-600 transition duration-300">Hackathons</Link></li>
+          <li><Link href="#competitions" className="text-gray-800 hover:text-blue-600 transition duration-300">Hackathons</Link></li>
           {/*<li><Link href="#competitions" className="text-gray-800 hover:text-blue-600 transition duration-300">Competitions</Link></li>*/}
         </ul>
       </nav>
