@@ -16,7 +16,7 @@ export default function AboutMe() {
         </div>
         <div className="md:w-2/3 md:pl-8 text-center md:text-left">
           <p className="text-gray-700 mb-4">
-            Hello! I'm Dennis, I study Mathematics and Computer Science at TMU and I'm currently a Software Developer at Shopify!
+            Hello! I'm Dennis, I study Mathematics and Computer Science at TMU and was previously a Software Engineering Intern at Shopify!
           </p>
           <p className="text-gray-700">
             I love Backend Development and DevOps. I also love competitive proramming, I'm even part of TMU's ICPC team!
