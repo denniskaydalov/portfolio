@@ -1,19 +1,25 @@
 import type { Metadata } from 'next'
+import { DM_Sans } from 'next/font/google'
+import { ThemeProvider } from './components/ThemeContext'
+import Nav from './components/Nav'
 import './globals.css'
 
+const dmSans = DM_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+
 export const metadata: Metadata = {
-  title: 'Dennis Kaydalov Portfolio',
-  description: 'Created by Dennis Kaydalov',
+  title: 'Dennis Kaydalov',
+  description: 'Software Engineer',
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" style={{ backgroundColor: '#0a0a0a' }} suppressHydrationWarning>
-      <body suppressHydrationWarning style={{ backgroundColor: '#0a0a0a' }}>{children}</body>
+    <html lang="en" className={dmSans.className} suppressHydrationWarning>
+      <body suppressHydrationWarning>
+        <ThemeProvider>
+          <Nav />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
