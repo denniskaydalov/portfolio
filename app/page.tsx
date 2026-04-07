@@ -62,10 +62,11 @@ export default function Home() {
     <main className="max-w-5xl mx-auto px-4 sm:px-8 py-10 sm:py-16 space-y-16 sm:space-y-20">
       {/* Bio */}
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 items-start">
-        <div className="shrink-0 sm:mt-2 mx-auto sm:mx-0">
+        <div className="shrink-0 sm:mt-2 mx-auto sm:mx-0 flex flex-col items-center gap-3">
           <div className="rounded-full overflow-hidden w-36 h-36 sm:w-52 sm:h-52" style={{ boxShadow: `0 0 0 4px ${t.ring}` }}>
             <Image src="/pfp.jpg" alt="Dennis Kaydalov" width={208} height={208} className="object-cover w-full h-full" />
           </div>
+          <p className="text-[15px] italic" style={{ color: t.muted }}>this is me!</p>
         </div>
 
         <div className="flex-1 max-w-2xl">
