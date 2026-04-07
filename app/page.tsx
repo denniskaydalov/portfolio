@@ -7,6 +7,7 @@ const jobs = [
   {
     company: 'Ramp',
     url: 'https://ramp.com',
+    role: 'Software Engineer Intern',
     location: 'New York City',
     period: 'May – Aug 2026',
     incoming: true,
@@ -15,14 +16,16 @@ const jobs = [
   {
     company: 'Orbital',
     url: 'https://tryorbital.vercel.com',
+    role: 'Co-founder',
     location: 'Toronto',
     period: '2025 – present',
     incoming: false,
-    description: 'Co-founder. AI memory tool for busy people — capture meetings, notes, and ideas, and ask for any of it back instantly.',
+    description: 'AI memory tool for busy people — capture meetings, notes, and ideas, and ask for any of it back instantly.',
   },
   {
     company: 'Shopify',
     url: 'https://shopify.com',
+    role: 'Software Engineer Intern',
     location: 'Toronto',
     period: 'Jan – Aug 2025',
     incoming: false,
@@ -31,6 +34,7 @@ const jobs = [
   {
     company: 'Infinite Investment Systems',
     url: 'https://www.inf-systems.com',
+    role: 'Software Engineer Intern',
     location: 'Toronto',
     period: 'Apr – Dec 2024',
     incoming: false,
@@ -55,18 +59,18 @@ export default function Home() {
   const { t } = useTheme()
 
   return (
-    <main className="max-w-5xl mx-auto px-8 py-16 space-y-20">
+    <main className="max-w-5xl mx-auto px-4 sm:px-8 py-10 sm:py-16 space-y-16 sm:space-y-20">
       {/* Bio */}
-      <div className="flex gap-16 items-start">
-        <div className="shrink-0 mt-2">
-          <div className="rounded-full overflow-hidden w-52 h-52" style={{ boxShadow: `0 0 0 4px ${t.ring}` }}>
+      <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 items-start">
+        <div className="shrink-0 sm:mt-2 mx-auto sm:mx-0">
+          <div className="rounded-full overflow-hidden w-36 h-36 sm:w-52 sm:h-52" style={{ boxShadow: `0 0 0 4px ${t.ring}` }}>
             <Image src="/pfp.jpg" alt="Dennis Kaydalov" width={208} height={208} className="object-cover w-full h-full" />
           </div>
         </div>
 
         <div className="flex-1 max-w-2xl">
-          <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ color: t.heading }}>Hi, I'm Dennis!</h1>
-          <div className="space-y-4 text-[17px] leading-relaxed" style={{ color: t.body }}>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-5 sm:mb-6 leading-tight" style={{ color: t.heading }}>Hi, I'm Dennis!</h1>
+          <div className="space-y-4 text-[16px] sm:text-[17px] leading-relaxed" style={{ color: t.body }}>
             <p>
               I'm a software engineer. This summer I'm joining{' '}
               <a href="https://ramp.com" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Ramp</a>{' '}
@@ -98,15 +102,15 @@ export default function Home() {
 
       {/* Work */}
       <section id="work">
-        <h2 className="text-3xl font-bold mb-12" style={{ color: t.heading }}>work</h2>
-        <div className="space-y-10">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12" style={{ color: t.heading }}>work</h2>
+        <div className="space-y-8 sm:space-y-10">
           {jobs.map((job) => (
-            <div key={job.company} className="flex gap-8">
-              <div className="w-36 shrink-0 text-right pt-1">
-                <span className="text-[13px]" style={{ color: t.muted }}>{job.period}</span>
+            <div key={job.company} className="flex flex-col sm:flex-row sm:gap-8">
+              <div className="sm:w-36 shrink-0 sm:text-right sm:pt-1 mb-1 sm:mb-0">
+                <span className="text-[12px] sm:text-[13px]" style={{ color: t.muted }}>{job.period}</span>
               </div>
-              <div className="flex-1 border-t pt-1" style={{ borderColor: t.border }}>
-                <div className="flex items-center gap-2 mb-1">
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-0.5 flex-wrap">
                   <a href={job.url} target="_blank" rel="noopener noreferrer"
                     style={{ color: t.text }} className="font-semibold hover:opacity-70 transition-opacity">
                     {job.company}
@@ -117,7 +121,9 @@ export default function Home() {
                   )}
                   <span className="text-[13px]" style={{ color: t.dimmer }}>· {job.location}</span>
                 </div>
-                <p className="text-[15px] leading-relaxed" style={{ color: t.desc }}>{job.description}</p>
+                <p className="text-[13px] mb-2" style={{ color: t.muted }}>{job.role}</p>
+                <div className="border-t mb-2" style={{ borderColor: t.border }} />
+                <p className="text-[14px] sm:text-[15px] leading-relaxed" style={{ color: t.desc }}>{job.description}</p>
               </div>
             </div>
           ))}
@@ -126,22 +132,23 @@ export default function Home() {
 
       {/* Projects */}
       <section id="projects">
-        <h2 className="text-3xl font-bold mb-12" style={{ color: t.heading }}>projects</h2>
-        <div className="space-y-10">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12" style={{ color: t.heading }}>projects</h2>
+        <div className="space-y-8 sm:space-y-10">
           {projects.map((p) => (
-            <div key={p.name} className="flex gap-8">
-              <div className="w-36 shrink-0" />
-              <div className="flex-1 border-t pt-1" style={{ borderColor: t.border }}>
+            <div key={p.name} className="flex flex-col sm:flex-row sm:gap-8">
+              <div className="hidden sm:block sm:w-36 shrink-0" />
+              <div className="flex-1">
                 {p.url ? (
                   <a href={p.url} target="_blank" rel="noopener noreferrer"
-                    style={{ color: t.text }} className="font-semibold hover:opacity-70 transition-opacity block mb-1">
+                    style={{ color: t.text }} className="font-semibold hover:opacity-70 transition-opacity block mb-2">
                     {p.name}
                   </a>
                 ) : (
-                  <span className="font-semibold block mb-1" style={{ color: t.text }}>{p.name}</span>
+                  <span className="font-semibold block mb-2" style={{ color: t.text }}>{p.name}</span>
                 )}
+                <div className="border-t mb-2" style={{ borderColor: t.border }} />
                 {p.description && (
-                  <p className="text-[15px] leading-relaxed" style={{ color: t.desc }}>{p.description}</p>
+                  <p className="text-[14px] sm:text-[15px] leading-relaxed" style={{ color: t.desc }}>{p.description}</p>
                 )}
               </div>
             </div>
