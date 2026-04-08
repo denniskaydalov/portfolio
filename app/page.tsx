@@ -15,7 +15,7 @@ const jobs = [
   },
   {
     company: 'Orbital',
-    url: 'https://orbital.app',
+    url: 'https://tryorbital.vercel.app',
     role: 'Co-founder',
     location: 'Toronto',
     period: '2025 – present',
@@ -76,7 +76,7 @@ export default function Home() {
               I'm a software engineer. This summer I'm joining{' '}
               <a href="https://ramp.com" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Ramp</a>{' '}
               as a SWE intern in NYC. I'm also building{' '}
-              <a href="https://orbital.app" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Orbital</a>,
+              <a href="https://tryorbital.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Orbital</a>,
               an AI memory tool for busy people.
             </p>
             <p>
@@ -88,7 +88,7 @@ export default function Home() {
             </p>
             <p>
               I study Math &amp; CS at{' '}
-              <a href="https://www.torontomu.ca" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">TMU</a>, did an exchange at{' '}
+              <a href="https://www.torontomu.ca" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Toronto Metropolitan University</a>, did an exchange at{' '}
               <a href="https://ntu.edu.sg" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Nanyang Technological University</a>{' '}
               in Singapore, and compete on the university's{' '}
               <a href="https://www.torontomu.ca/science/news-events/2026/01/tmu-climbs-the-ranks-in-global-computer-programming-competition/" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">ICPC</a> team.
