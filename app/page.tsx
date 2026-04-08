@@ -11,11 +11,11 @@ const jobs = [
     location: 'New York City',
     period: 'May – Aug 2026',
     incoming: true,
-    description: 'Incoming backend engineer on Custom Fields & Records. Building AI agents for seamless client onboarding.',
+    description: 'Incoming backend engineer on Custom Fields & Records, and building AI agents for seamless client onboarding.',
   },
   {
     company: 'Orbital',
-    url: 'https://tryorbital.vercel.com',
+    url: 'https://orbital.app',
     role: 'Co-founder',
     location: 'Toronto',
     period: '2025 – present',
@@ -29,7 +29,7 @@ const jobs = [
     location: 'Toronto',
     period: 'Jan – Aug 2025',
     incoming: false,
-    description: 'Two terms across the Retail Kernel and In Store Orders teams. Built GraphQL APIs, shipped a Shop Mini to 20M+ users, and won an internal hackathon.',
+    description: 'Contributed to the Retail Kernel and In Store Orders teams. Built GraphQL APIs, shipped a Shop Mini to 20M+ users, and won an internal hackathon.',
   },
   {
     company: 'Infinite Investment Systems',
@@ -76,7 +76,7 @@ export default function Home() {
               I'm a software engineer. This summer I'm joining{' '}
               <a href="https://ramp.com" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Ramp</a>{' '}
               as a SWE intern in NYC. I'm also building{' '}
-              <a href="https://tryorbital.vercel.com" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Orbital</a>,
+              <a href="https://orbital.app" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Orbital</a>,
               an AI memory tool for busy people.
             </p>
             <p>
@@ -89,13 +89,9 @@ export default function Home() {
             <p>
               I study Math &amp; CS at{' '}
               <a href="https://www.torontomu.ca" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">TMU</a>, did an exchange at{' '}
-              <a href="https://ntu.edu.sg" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">NTU</a>{' '}
+              <a href="https://ntu.edu.sg" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Nanyang Technological University</a>{' '}
               in Singapore, and compete on the university's{' '}
               <a href="https://www.torontomu.ca/science/news-events/2026/01/tmu-climbs-the-ranks-in-global-computer-programming-competition/" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">ICPC</a> team.
-            </p>
-            <p>
-              Reach me at{' '}
-              <a href="mailto:denniskaydalov@gmail.com" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">denniskaydalov@gmail.com</a>.
             </p>
           </div>
         </div>
