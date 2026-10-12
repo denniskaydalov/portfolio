@@ -8,15 +8,23 @@ const jobs = [
     url: 'https://ramp.com',
     location: 'New York City',
     period: 'May – Aug 2026',
-    incoming: true,
-    description: 'Incoming backend engineer on Custom Fields & Records. Building AI agents for seamless client onboarding.',
+    current: true,
+    description: 'Backend engineer on Custom Fields & Records. Building AI agents for seamless client onboarding.',
+  },
+  {
+    company: 'Physical Reasoning',
+    url: 'https://physicalreasoning.ai',
+    location: 'Toronto',
+    period: '2026 – present',
+    current: true,
+    description: 'Co-founder. Training data and infrastructure for world models across robotics, self-driving, prediction markets, and the sciences.',
   },
   {
     company: 'Shopify',
     url: 'https://shopify.com',
     location: 'Toronto',
     period: 'Jan – Aug 2025',
-    incoming: false,
+    current: false,
     description: 'Two terms across the Retail Kernel and In Store Orders teams. Built GraphQL APIs, shipped a Shop Mini to 20M+ users, and won an internal hackathon.',
   },
   {
@@ -24,7 +32,7 @@ const jobs = [
     url: 'https://www.inf-systems.com',
     location: 'Toronto',
     period: 'Apr – Dec 2024',
-    incoming: false,
+    current: false,
     description: 'Built NL-to-SQL services using Azure OpenAI and RAG. ETL pipelines ingesting data from 400+ firms.',
   },
 ]
@@ -47,9 +55,9 @@ export default function WorkPage() {
                   style={{ color: t.text }} className="font-semibold hover:opacity-70 transition-opacity">
                   {job.company}
                 </a>
-                {job.incoming && (
+                {job.current && (
                   <span className="text-[11px] border rounded px-1.5 py-px"
-                    style={{ color: t.accent, borderColor: `${t.accent}44` }}>incoming</span>
+                    style={{ color: t.accent, borderColor: `${t.accent}44` }}>current</span>
                 )}
                 <span className="text-[13px]" style={{ color: t.dimmer }}>· {job.location}</span>
               </div>

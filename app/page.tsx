@@ -10,17 +10,17 @@ const jobs = [
     role: 'Software Engineer Intern',
     location: 'New York City',
     period: 'May – Aug 2026',
-    incoming: true,
-    description: 'Incoming backend engineer on Custom Fields & Records, and building AI agents for seamless client onboarding.',
+    current: true,
+    description: 'Backend engineer on Custom Fields & Records, building AI agents for seamless client onboarding.',
   },
   {
-    company: 'Orbital',
-    url: 'https://tryorbital.vercel.app',
+    company: 'Physical Reasoning',
+    url: 'https://physicalreasoning.ai',
     role: 'Co-founder',
     location: 'Toronto',
-    period: '2025 – present',
-    incoming: false,
-    description: 'AI memory tool for busy people — capture meetings, notes, and ideas, and ask for any of it back instantly.',
+    period: '2026 – present',
+    current: true,
+    description: 'Training data and infrastructure for world models across robotics, self-driving, prediction markets, and the sciences.',
   },
   {
     company: 'Shopify',
@@ -28,7 +28,7 @@ const jobs = [
     role: 'Software Engineer Intern',
     location: 'Toronto',
     period: 'Jan – Aug 2025',
-    incoming: false,
+    current: false,
     description: 'Contributed to the Retail Kernel and In Store Orders teams. Built GraphQL APIs, shipped a Shop Mini to 20M+ users, and won an internal hackathon.',
   },
   {
@@ -37,12 +37,17 @@ const jobs = [
     role: 'Software Engineer Intern',
     location: 'Toronto',
     period: 'Apr – Dec 2024',
-    incoming: false,
+    current: false,
     description: 'Built NL-to-SQL services using Azure OpenAI and RAG. ETL pipelines ingesting data from 400+ firms.',
   },
 ]
 
 const projects = [
+  {
+    name: 'Sketchy Systems',
+    url: 'https://sketchysystems.dev',
+    description: 'Sketch a system architecture from load balancers, caches, and databases, send simulated traffic through it, and practice finding and fixing what breaks.',
+  },
   {
     name: 'Multi-Agent Trading Simulator',
     url: undefined,
@@ -73,11 +78,11 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl font-bold mb-5 sm:mb-6 leading-tight" style={{ color: t.heading }}>Hi, I'm Dennis!</h1>
           <div className="space-y-4 text-[16px] sm:text-[17px] leading-relaxed" style={{ color: t.body }}>
             <p>
-              I'm a software engineer. This summer I'm joining{' '}
+              I'm a software engineer. This summer I'm at{' '}
               <a href="https://ramp.com" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Ramp</a>{' '}
               as a SWE intern in NYC. I'm also building{' '}
-              <a href="https://tryorbital.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Orbital</a>,
-              an AI memory tool for busy people.
+              <a href="https://physicalreasoning.ai" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Physical Reasoning</a>,
+              training data and infrastructure for world models.
             </p>
             <p>
               Before that, I was at{' '}
@@ -112,9 +117,9 @@ export default function Home() {
                     style={{ color: t.text }} className="font-semibold hover:opacity-70 transition-opacity">
                     {job.company}
                   </a>
-                  {job.incoming && (
+                  {job.current && (
                     <span className="text-[11px] border rounded px-1.5 py-px"
-                      style={{ color: t.accent, borderColor: `${t.accent}44` }}>incoming</span>
+                      style={{ color: t.accent, borderColor: `${t.accent}44` }}>current</span>
                   )}
                   <span className="text-[13px]" style={{ color: t.dimmer }}>· {job.location}</span>
                 </div>

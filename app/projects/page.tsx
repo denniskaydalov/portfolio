@@ -4,9 +4,9 @@ import { useTheme } from '../components/ThemeContext'
 
 const projects = [
   {
-    name: 'Orbital',
-    url: 'https://tryorbital.vercel.com',
-    description: 'AI memory tool for busy people. Capture everything — meetings, notes, ideas — and ask for any of it back instantly.',
+    name: 'Sketchy Systems',
+    url: 'https://sketchysystems.dev',
+    description: 'Sketch a system architecture from load balancers, caches, and databases, send simulated traffic through it, and practice finding and fixing what breaks.',
   },
   {
     name: 'Hands Up',
