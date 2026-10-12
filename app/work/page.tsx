@@ -7,9 +7,9 @@ const jobs = [
     company: 'Ramp',
     url: 'https://ramp.com',
     location: 'New York City',
-    period: 'May – Aug 2026',
-    current: true,
-    description: 'Backend engineer on Custom Fields & Records. Building AI agents for seamless client onboarding.',
+    period: 'May – Sep 2026',
+    current: false,
+    description: 'Backend engineer on Custom Fields & Records. Built AI agents for seamless client onboarding.',
   },
   {
     company: 'Physical Reasoning',

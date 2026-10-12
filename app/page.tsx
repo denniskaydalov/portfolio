@@ -9,9 +9,9 @@ const jobs = [
     url: 'https://ramp.com',
     role: 'Software Engineer Intern',
     location: 'New York City',
-    period: 'May – Aug 2026',
-    current: true,
-    description: 'Backend engineer on Custom Fields & Records, building AI agents for seamless client onboarding.',
+    period: 'May – Sep 2026',
+    current: false,
+    description: 'Backend engineer on Custom Fields & Records. Built AI agents for seamless client onboarding.',
   },
   {
     company: 'Physical Reasoning',
@@ -78,7 +78,7 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl font-bold mb-5 sm:mb-6 leading-tight" style={{ color: t.heading }}>Hi, I'm Dennis!</h1>
           <div className="space-y-4 text-[16px] sm:text-[17px] leading-relaxed" style={{ color: t.body }}>
             <p>
-              I'm a software engineer. This summer I'm at{' '}
+              I'm a software engineer. This summer I was at{' '}
               <a href="https://ramp.com" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Ramp</a>{' '}
               as a SWE intern in NYC. I'm also building{' '}
               <a href="https://physicalreasoning.ai" target="_blank" rel="noopener noreferrer" style={{ color: t.accent }} className="underline underline-offset-2 hover:opacity-75 transition-opacity">Physical Reasoning</a>,
