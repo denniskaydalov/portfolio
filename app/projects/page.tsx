@@ -4,11 +4,6 @@ import { useTheme } from '../components/ThemeContext'
 
 const projects = [
   {
-    name: 'Sketchy Systems',
-    url: 'https://sketchysystems.dev',
-    description: 'Sketch a system architecture from load balancers, caches, and databases, send simulated traffic through it, and practice finding and fixing what breaks.',
-  },
-  {
     name: 'Hands Up',
     url: 'https://hands-up.app/',
     description: '',

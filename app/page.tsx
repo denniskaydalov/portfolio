@@ -44,11 +44,6 @@ const jobs = [
 
 const projects = [
   {
-    name: 'Sketchy Systems',
-    url: 'https://sketchysystems.dev',
-    description: 'Sketch a system architecture from load balancers, caches, and databases, send simulated traffic through it, and practice finding and fixing what breaks.',
-  },
-  {
     name: 'Multi-Agent Trading Simulator',
     url: undefined,
     description: 'Simulated stock market with AI agents you trade against, including market makers and live market events. Built at the Meta Llama Impact Hackathon.',
